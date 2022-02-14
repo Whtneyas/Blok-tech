@@ -1,0 +1,23 @@
+{
+  "name": "pt-course-20-21",
+  "version": "1.0.0",
+  "description": "Voor matching applicatie",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Whtneyas/pt-course-20-21.git"
+  },
+  "author": "Whitney  Abrah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Whtneyas/pt-course-20-21/issues"
+  },
+  "homepage": "https://github.com/Whtneyas/pt-course-20-21#readme",
+  "dependencies": {
+    "camelcase": "^6.3.0",
+    "lodash": "^4.17.21"
+  }
+}
