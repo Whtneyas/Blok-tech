@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "harmatan"sans-serif;
+}
+
+body {}
+
+/*images profielen*/
+h2 {
+    position: relative;
+    color:White;
+    top: 10em;
+    left: .6em;
+    font-size: 2rem;
+
+
+
+
+}
+main {
+    margin-top:0;
+}
+
+main img {
+    width: 100%;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resize-image {
+    margin: em;
+    height: 400px;
+}
+
+main article {
+    display: flex;
+    position: relative;
+    flex-direction: flex;
+    gap:1em;
+    bottom:3em;
+    left: 1em;
+  
+
+
+}
+main article p{
+    font-size : 1rem;
+    background-color: #F4ECC2;
+    padding:.5em;
+    border-radius: 6px;
+
+}
