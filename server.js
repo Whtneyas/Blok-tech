@@ -6,69 +6,70 @@ const profiles = [{
 
 //Sports profiles 
     "id": 1,
-    "Name": " John Mayor",
-    "Age": "22years",
+    "name": " John Mayor",
+    "age": "22years",
     "url": "profile1.jpg",
-    "Sports": "Archery",
-    "Gender": "Male",
-    "Location": "'Amsterdam"
+    "sports": "archery",
+    "gender": "Male",
+    "location": "'Amsterdam"
 
   },{
     "id": 2,
-    "Name": "Derrick Benson",
-    "Age": "32years",
+    "name": "Derrick Benson",
+    "age": "32years",
     "url": "profile2-golf.jpg",
-    "Sports": "Golf",
-    "Gender": "Male",
-    "Location": "Rotterdam"
+    "sports": "Golf",
+    "gender": "Male",
+    "location": "Rotterdam"
   },{
-    "Name": "Gideon Davidson",
-    "Age": "34years",
+    "id": 2,
+    "name": "Gideon Davidson",
+    "age": "34years",
     "url": "profile3-archery.jpg",
-    "Sports": "Archery",
-    "Gender": "Male",
-    "Location": "Utrecht"
+    "sports": "Archery",
+    "gender": "Male",
+    "location": "Utrecht"
   },{
     "id": 4,
-    "Name": " Nina Brent",
-    "Age": "27",
+    "name": " Nina Brent",
+    "age": "27",
     "url": "profile3-fitness.jpg",
-    "Sports": "Skating",
-    "Gender": "Female",
-    "Location": "Arnhem"
+    "sports": "Skating",
+    "gender": "Female",
+    "location": "Arnhem"
   },{
     "id": 5,
-    "Name": " Daniel Peterson",
-    "Age": "23years",
+    "name": " Daniel Peterson",
+    "age": "23years",
     "url": "profile3-fitness.jpg",
-    "Sports": "Football",
-    "Gender": "Male",
-    "Location": "Groningen"
+    "sports": "Football",
+    "gender": "Male",
+    "location": "Groningen"
   },{
     "id": 6,
-    "Name": "Mandy Abrah ",
-    "Age": "20years",
+    "name": "Mandy Abrah ",
+    "age": "20years",
     "url": "profile6-tennis.jpg",
-    "Sports": "Tennisplayer",
-    "Gender": "Female",
-    "Location": "Amsterdam"
+    "sports": "Tennisplayer",
+    "gender": "Female",
+    "location": "Amsterdam"
   },{
     "id": 7,
-    "Name": "Keisha Alexander ",
-    "Age": "25years",
+    "name": "Keisha Alexander ",
+    "age": "25years",
     "url": "profile7-swimmer.jpg",
-    "Sport": "Swimmer",
-    "Gender": "Female",
-    "Location": "Rotterdam"
+    "sports": "Swimmer",
+    "gender": "Female",
+    "location": "Rotterdam"
 
   },{
     "id": 8,
-    "Name": "Arthur Prince  ",
-    "Age": "25years",
+    "name": "Arthur Prince  ",
+    "age": "25years",
     "url": "basketball.jpg",
-    "Sport": "Basketball player",
-    "Gender": "Male",
-    "Location": "Arnhem"
+    "sports": "Basketballplayer",
+    "gender": "Male",
+    "location": "Arnhem"
 
   },
 
@@ -92,7 +93,9 @@ app.get('/search', (req, res) => {
 })
 
 app.get('/profiles', (req,res) => {
-  res.render("profilelist")
+  res.render("profilelist",{
+    profiles
+  })
 })
 
 
