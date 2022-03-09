@@ -1,100 +1,31 @@
 <head>
-    <%- include('include/head.ejs') -%>
+    <%- include('include/head.ejs')%>
+
 </head>
-     
+
 
 <body>
-    <%- include('include/header.ejs') -%>
+    <%- include('include/header.ejs')%>
 
     <main>
-        <h2>John Mayor</h2>
-        <img src="images/profile1.jpg" alt="skating">
+        <% profiles.forEach(function(profile){%>
+        <h2><%= profile.name %></h2>
 
+        <img src="/images/<%=profile.url %>" alt="">
         <article>
-            <p>Skating </p>
-            <p>22years</p>
-            <p>Male</p>
-            <p>Amsterdam</p>
-        </article>
-
-        <h2>Derrick Benson</h2>
-        <img src="images/profile2-golf.jpg" alt="golf">
-
-        <article>
-            <p>Golf </p>
-            <p>32years</p>
-            <p>Male</p>
-            <p>Rotterdam</p>
-        </article>
-
-        <h2>Gideon Davidson</h2>
-        <img src="images/profile3-archery.jpg" alt="archery" class="resize-image">
-
-        <article>
-            <p>Archery</p>
-            <p>34years</p>
-            <p>Male</p>
-            <p>Utrecht</p>
-        </article>
-
-        <h2>Nina Brent </h2>
-        <img src="images/profile3-fitness.jpg" alt="fitness" class="resize-image">
-
-        <article>
-            <p>Runner </p>
-            <p>27years</p>
-            <p>Female</p>
-            <p>Arnhem</p>
-        </article>
-
-        <h2>Daniel Peterson </h2>
-        <img src="images/profile5-football.jpg" alt="profile5-football">
-
-        <article>
-            <p>Runner </p>
-            <p>23years</p>
-            <p>Male</p>
-            <p>Groningen</p>
-        </article>
-
-        <h2> Mandy Abrah </h2>
-        <img src="images/profile6-tennis.jpg" alt="tennis" class="resize-image">
-
-        <article>
-            <p>Tennisplayer</p>
-            <p>20years</p>
-            <p>Female</p>
-            <p>Amsterdam</p>
-        </article>
-
-        <h2> Keisha Alexander </h2>
-        <img src="images/profile7-swimmer.jpg" alt="swimmer" class="resize-image">
-
-        <article>
-            <p>Tennisplayer</p>
-            <p>25years</p>
-            <p>Female</p>
-            <p>Rotterdam</p>
-        </article>
-
-        <h2> Arthur Prince </h2>
-        <img src="images/basketball.jpg" alt="basketball" class="resize-image">
-
-        <article>
-            <p>Basketball player</p>
-            <p>26years</p>
-            <p>Male</p>
-            <p>Arnhem</p>
+            <p><%=profile.age %></p>
+            <p><%=profile.sports%></p>
+            <p><%=profile.gender %></p>
+            <p><%=profile.location %></p>
         </article>
 
 
-
-
-
+        <% }) %>
 
 
 
     </main>
+    <%- include('include/footer.ejs')%>
 
 
 </body>
