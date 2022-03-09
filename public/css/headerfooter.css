@@ -118,3 +118,24 @@ details p{
 details p:hover{
 background-color: yellow;
 }
+
+
+.footer-navbar {
+    display:flex;
+    position: relative;
+    bottom:0
+    flex-direction: rows;
+    
+
+
+}
+
+.footer-navbar li {
+    text-align: center;
+
+}
+.footer-navbar ul  img {
+    width: 50px;
+    margin:.8em;
+}
+
