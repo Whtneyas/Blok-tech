@@ -2,27 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "harmatan"sans-serif;
+    font-family: "harmattan";
 }
 
 body {
+    background-color: beige;
+    overflow: scroll;
 
 }
 
 /*images profielen*/
 h2 {
     position: relative;
-    color:White;
+    color: White;
     top: 10em;
     left: .6em;
     font-size: 2rem;
 
-
-
-
 }
+
 main {
-    margin-top:0;
+    position: relative;
+    bottom: 4.5em;
 }
 
 main img {
@@ -31,7 +32,11 @@ main img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+   
 }
+
+
+
 
 .resize-image {
     margin: em;
@@ -42,17 +47,24 @@ main article {
     display: flex;
     position: relative;
     flex-direction: flex;
-    gap:1em;
-    bottom:3em;
+    gap: 1em;
+    bottom: 3em;
     left: 1em;
-  
+
 
 
 }
-main article p{
-    font-size : 1rem;
+
+main article p {
+    font-size: 1rem;
     background-color: #F4ECC2;
-    padding:.5em;
+    padding: .5em;
     border-radius: 6px;
+    box-shadow: 2px 3px 4px ;
+   
+    
+    
 
 }
+
+

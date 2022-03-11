@@ -1,8 +1,18 @@
+
+const dotenv = require("dotenv").config();
+const{MongoClient}= require("mongodb");
+const {ObjectId} = require("mongodb");
+
+//To test if it works 
+console.log(process.env.TESTVAR)
+
 const express = require("express")
 const app = express()
-const port = 3000;
+const port = process.env.PORT || 3000;//port maken
 const path = require("path");
-const profiles = [{
+let db = null;
+const profiles = [
+  {
 
 //Sports profiles 
     "id": 1,
@@ -76,6 +86,8 @@ const profiles = [{
 ]
 
 
+
+
 //Static files 
 app.use(express.static('public'))
 // app.use ('/css', express.static( __dirname + 'public/css'))
@@ -103,14 +115,34 @@ app.get('/profiles', (req,res) => {
 app.get('/', (req, res) => {
   res.render('index')
 })
-
-app.use((req, res, next) => {
-  res.status(404).render("404");
-});
+//error
+//app.use((req, res, next) => {
+ // res.status(404).render("404");
+//});
 
 // 404 file aanmaken of stylen anders console.log
+
+
+ // Connect to datatbase 
+
+async function connectDB() {
+  const uri = process.env.DATABASE_URL;
+  const client = new MongoClient(uri, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+  });
+  try {
+      await client.connect();
+      db = client.db(process.env.DB_NAME);
+  } catch (error) {
+    
+     
+  }
+
+}
 
 //port listening to 
 app.listen(port, () => {
   console.log(`Web app listening on ${port}`)
+  connectDB().then(() => console.log("We have a connection to Mongo!"));
 })

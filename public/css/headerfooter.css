@@ -44,8 +44,8 @@ h1 {
 .chaticon{
     position: relative;
     border:none;
-    top:1.2em;
-    left:8em;
+    top:1.8em;
+    left:11em;
     width: 35px;
     height: 35px;
     
@@ -54,8 +54,8 @@ h1 {
 .notification-icon{
     position: relative;
     border:none;
-    top:1.2em;
-    left:2em;
+    top:1.8em;
+    left:5em;
     width: 35px;
     height: 35px;
 
@@ -64,9 +64,6 @@ details{
   margin-top: 2em;
 }
 
-.stories{
-   
-}
 ul li {
     flex-direction: column;
     text-decoration: none;
@@ -93,27 +90,50 @@ ul{
   margin-right: auto;
   border-radius: 100%;
   border: 3px solid yellow;
+  animation-name: imagesbounce;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
 }
 
-footer{
-    position: fixed;
-    top:38em;
-    width: 25em;
-    height: 7em;
-   background-color: yellow;
+
+@keyframes imagesbounce{
+    0% {
+        transform: rotate(1deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    
+    }
 }
+
+
 
 details {
-    position: fixed;
     position: relative;
     left:17em;
     padding: .5em;
+    z-index: 1;
     border-radius: 2px;
 }
+details summary {
+    position: relative;
+    bottom: 2em;
+    border: 1px solid black;
+    padding: .5em;
+    border-radius: 5px;
+    background-color: yellow;
+     margin-right: 18em;
+
+   
+
+
+}
+
 details p{
     border: 1px solid rgb(238, 227, 227);
     padding:.5em;
     text-align: left;
+    background-color:white;
 }
 details p:hover{
 background-color: yellow;
@@ -121,21 +141,21 @@ background-color: yellow;
 
 
 .footer-navbar {
-    display:flex;
-    position: relative;
-    bottom:0
-    flex-direction: rows;
-    
-
+    display: flex;
+    background-color: yellow;
 
 }
 
-.footer-navbar li {
-    text-align: center;
+.footer-navbar ul img{
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 1em;
+  animation: ;
 
-}
-.footer-navbar ul  img {
-    width: 50px;
-    margin:.8em;
+ 
+
 }
 
