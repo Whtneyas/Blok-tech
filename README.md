@@ -78,8 +78,8 @@ MongoDb is een database waarin gegevens worden opgeslagen die lijken op een json
 Ik heb de license MIT gebruikt .Feel free to peek!!
 
 # Contact 
- Naam : Whitney Abrah 
- Email : Whitneyserwaa@gmail.com 
+  - Naam : Whitney Abrah 
+  - Email : Whitneyserwaa@gmail.com 
  
 
 # Resources 
@@ -92,9 +92,21 @@ Ik heb de license MIT gebruikt .Feel free to peek!!
   - [ Express ](https://express.com/)
   
   - [ Introduction to Nodejs ](https://Nodejs.com/) 
+
+
+  https://react.design/terminal - commandlines 
+  
+  https://expressjs.com/en/guide/using-template-engines.html -express tempalte engines 
+  https://expressjs.com/en/resources/template-engines.html - different template engines 
+  MDN. (2021, 14 september). Introduction to the DOM - Web APIs : https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+  The Power of Progressive Enhancement by Andy Bell :  https://archive.hankchizljaw.com/wrote/the-power-of-progressive-enhancement
+  MDN. (2022, 22 januari) Introducing asynchronous JavaScript. : https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing
+  
+  
+  
  
 
-
+ 
   
   
 
