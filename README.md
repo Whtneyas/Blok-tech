@@ -80,6 +80,13 @@ Ik heb de license MIT gebruikt .Feel free to peek!!
 # Contact 
   - Naam : Whitney Abrah 
   - Email : Whitneyserwaa@gmail.com 
+
+
+# Credits
+ Ik wil deze docent bedanken voor hun grote inzet tijdens deze project .
+ - Robert Spiers  : De les project tech gegeven
+ - Sonya Rouwhorst : De les Backend development gegeven 
+ - Danny de vries   : De les Frontend Development gegeven 
  
 
 # Resources 
