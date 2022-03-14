@@ -71,10 +71,16 @@ MongoDb is een database waarin gegevens worden opgeslagen die lijken op een json
 
 1. Sleep je env bestandje in je gitignore voor saftey reasons . De informatie in je env is een gevoelige gegevens die moet wel geheim zijn.
 
-Hoe kun je mijn package runnen. 
+# Hoe kun je mijn package runnen. 
+  Om mijn applicatie te kunnen runnen moet je localhost:3000 in de browser zoeken.
 
 # License
 Ik heb de license MIT gebruikt .Feel free to peek!!
+
+# Contact 
+ Naam : Whitney Abrah 
+ Email : Whitneyserwaa@gmail.com 
+ 
 
 # Resources 
   De meeste bronnen ik van de les gekregen.
