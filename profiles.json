@@ -1,73 +1,173 @@
-
 [
-    {
+  {
+    "id": 1,
+    "name": " John Mayor",
+    "age": "22years",
+    "url": "profile1.jpg",
+    "sports": "archery",
+    "gender": "Male",
+    "location": "Amsterdam"
+  },{
+    "id": 2,
+    "name": "Derrick Benson",
+    "age": "32years",
+    "url": "profile2-golf.jpg",
+    "sports": "Golf",
+    "gender": "Male",
+    "location": "Rotterdam"
+  },{
+    "id": 3,
+    "name": "Gideon Davidson",
+    "age": "34years",
+    "url": "artprofile1.jpg",
+    "art": "painting",
+    "gender": "Male",
+    "location": "Utrecht"
+  },{
+    "id": 4,
+    "name": " Nina Brent",
+    "age": "27",
+    "url": "artprofile2.jpg",
+    "art": "painting",
+    "gender": "Female",
+    "location": "Arnhem"
+  },{
+    "id": 5,
+    "name": "Bridjet Peterson",
+    "age": "23years",
+    "url": "foodprofile1.jpg",
+    "food": "Chef",
+    "gender": "Female",
+    "location": "Groningen"
+  },{
+    "id": 6,
+    "name": "James Brown ",
+    "age": "20years",
+    "url": "foodprofile2.jpg",
+    "food ": "Food lover",
+    "gender": "Male",
+    "location": "Amsterdam"
+  },{
+    "id": 17,
+    "name": "Bridjet Peterson",
+    "age": "23years",
+    "url": "gameprofile2.jpg",
+    "food": "Chef",
+    "gender": "Female",
+    "location": "Groningen"
+  },{
+    "id": 18,
+    "name": "James Brown ",
+    "age": "20years",
+    "url": "gameprofile1.jpg",
+    "food ": "Food lover",
+    "gender": "Male",
+    "location": "Amsterdam"
+  },
   
-      "id": 1,
-      "name": " John Mayor",
-      "age": "22years",
-      "url": "profile1.jpg",
-      "sports": "archery",
-      "gender": "Male",
-      "location": "'Amsterdam"
   
-    },{
-      "id": 2,
-      "name": "Derrick Benson",
-      "age": "32years",
-      "url": "profile2-golf.jpg",
-      "sports": "Golf",
-      "gender": "Male",
-      "location": "Rotterdam"
-    },{
-      "id": 2,
-      "name": "Gideon Davidson",
-      "age": "34years",
-      "url": "profile3-archery.jpg",
-      "sports": "Archery",
-      "gender": "Male",
-      "location": "Utrecht"
-    },{
-      "id": 4,
-      "name": " Nina Brent",
-      "age": "27",
-      "url": "profile3-fitness.jpg",
-      "sports": "Skating",
-      "gender": "Female",
-      "location": "Arnhem"
-    },{
-      "id": 5,
-      "name": " Daniel Peterson",
-      "age": "23years",
-      "url": "profile3-fitness.jpg",
-      "sports": "Football",
-      "gender": "Male",
-      "location": "Groningen"
-    },{
-      "id": 6,
-      "name": "Mandy Abrah ",
-      "age": "20years",
-      "url": "profile6-tennis.jpg",
-      "sports": "Tennisplayer",
-      "gender": "Female",
-      "location": "Amsterdam"
-    },{
-      "id": 7,
-      "name": "Keisha Alexander ",
-      "age": "25years",
-      "url": "profile7-swimmer.jpg",
-      "sports": "Swimmer",
-      "gender": "Female",
-      "location": "Rotterdam"
+  {
+    "id": 7,
+    "name": "Keisha Alexander ",
+    "age": "25years",
+    "url": "fashionprofile1.jpg",
+    "fashion": "Model",
+    "gender": "Female",
+    "location": "Rotterdam"
+
+  },{
+    "id": 8,
+    "name": "Mandy Abrah ",
+    "age": "22years",
+    "url": "fashionprofile2.jpg",
+    "fashion": "Shopperholic",
+    "gender": "Female",
+    "location": "Arnhem"
+
+  },{
+    "id": 9,
+    "name": "Justine peet",
+    "age": "26years",
+    "url": "beautyprofile1.jpg",
+    "beauty": "Love beauty",
+    "gender": "Female",
+    "location": "Utrecht"
+
+  },{
+    "id": 9,
+    "name": "Justine peet",
+    "age": "30years",
+    "url": "beautyprofile2.jpg",
+    "beauty": "Love beauty",
+    "gender": "Female",
+    "location": "Arnhem"
+
+  },{
+    "id": 10,
+    "name": "Jalama Deen",
+    "age": "31years",
+    "url": "travelprofile1.jpg",
+    "travel": "traveller",
+    "gender": "Female",
+    "location": "Rotterdam"
+
+  },{
+    "id": 11,
+    "name": "Justin Tijm",
+    "age": "23years",
+    "url": "travelprofile1.jpg",
+    "travel": "traveller",
+    "gender": "Male",
+    "location": "Groningen"
+
+  },{
+    "id": 12,
+    "name": "David davidson",
+    "age": "34years",
+    "url": "musicprofile1.jpg",
+    "Music": "DJ",
+    "gender": "Male",
+    "location": "Amsterdam"
+  },{
+    "id": 13,
+    "name": "Britney Bright",
+    "age": "22years",
+    "url": "musicprofile2.jpg",
+    "Music": "DJ",
+    "gender": "Female",
+    "location": "Arnhem"
+  },{
+    "id": 14,
+    "name": "Laiba Ander",
+    "age": "29years",
+    "url": "profilebook1.jpg",
+    "Book": "Literature teacher",
+    "gender": "Female",
+    "location": "Utrecht"
+  },{
+    "id": 15,
+    "name": "Ben White",
+    "age": "24years",
+    "url": "profilebook2.jpg",
+    "Music": "DJ",
+    "gender": "Male",
+    "location": "Rotterdam"
+  },{
+    "id": 16,
+    "name": "Sharron White",
+    "age": "29years",
+    "url": "danceprofile1",
+    "Dance": "Bale dancer ",
+    "gender": "Female",
+    "location": "Amsterdam"
+  },{
+    "id": 16,
+    "name": "Bram ban ",
+    "age": "18years",
+    "url": "danceprofile2.jpg",
+    "Dance": "Street dancer ",
+    "gender": "Male",
+    "location": "Groningen"
+  }
   
-    },{
-      "id": 8,
-      "name": "Arthur Prince  ",
-      "age": "25years",
-      "url": "basketball.jpg",
-      "sports": "Basketballplayer",
-      "gender": "Male",
-      "location": "Arnhem"
-  
-    }
-  
-  ]
+]

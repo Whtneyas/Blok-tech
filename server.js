@@ -31,58 +31,161 @@ const profiles = [
     "sports": "Golf",
     "gender": "Male",
     "location": "Rotterdam"
-  },{
-    "id": 2,
+  },{//art profiles
+    "id": 3,
     "name": "Gideon Davidson",
     "age": "34years",
-    "url": "profile3-archery.jpg",
-    "sports": "Archery",
+    "url": "artprofile1.jpg",
+    "art": "painting",
     "gender": "Male",
     "location": "Utrecht"
   },{
     "id": 4,
     "name": " Nina Brent",
     "age": "27",
-    "url": "profile3-fitness.jpg",
-    "sports": "Skating",
+    "url": "artprofile2.jpg",
+    "art": "painting",
     "gender": "Female",
     "location": "Arnhem"
-  },{
+  },{//food profiles
     "id": 5,
-    "name": " Daniel Peterson",
+    "name": "Bridjet Peterson",
     "age": "23years",
-    "url": "profile3-fitness.jpg",
-    "sports": "Football",
-    "gender": "Male",
+    "url": "foodprofile1.jpg",
+    "food": "Chef",
+    "gender": "Female",
     "location": "Groningen"
   },{
     "id": 6,
-    "name": "Mandy Abrah ",
+    "name": "James Brown ",
     "age": "20years",
-    "url": "profile6-tennis.jpg",
-    "sports": "Tennisplayer",
-    "gender": "Female",
+    "url": "foodprofile2.jpg",
+    "food ": "Food lover",
+    "gender": "Male",
     "location": "Amsterdam"
+  },{//Games profiles
+    "id": 17,
+    "name": "Bridjet Peterson",
+    "age": "23years",
+    "url": "gameprofile2.jpg",
+    "food": "Chef",
+    "gender": "Female",
+    "location": "Groningen"
   },{
+    "id": 18,
+    "name": "James Brown ",
+    "age": "20years",
+    "url": "gameprofile1.jpg",
+    "food ": "Food lover",
+    "gender": "Male",
+    "location": "Amsterdam"
+  },
+  
+  
+  {//fashion
     "id": 7,
     "name": "Keisha Alexander ",
     "age": "25years",
-    "url": "profile7-swimmer.jpg",
-    "sports": "Swimmer",
+    "url": "fashionprofile1.jpg",
+    "fashion": "Model",
     "gender": "Female",
     "location": "Rotterdam"
 
   },{
     "id": 8,
-    "name": "Arthur Prince  ",
-    "age": "25years",
-    "url": "basketball.jpg",
-    "sports": "Basketballplayer",
-    "gender": "Male",
+    "name": "Mandy Abrah ",
+    "age": "22years",
+    "url": "fashionprofile2.jpg",
+    "fashion": "Shopperholic",
+    "gender": "Female",
     "location": "Arnhem"
 
-  },
+  },{//Beauty
+    "id": 9,
+    "name": "Justine peet",
+    "age": "26years",
+    "url": "beautyprofile1.jpg",
+    "beauty": "Love beauty",
+    "gender": "Female",
+    "location": "Utrecht"
 
+  },{
+    "id": 9,
+    "name": "Justine peet",
+    "age": "30years",
+    "url": "beautyprofile2.jpg",
+    "beauty": "Love beauty",
+    "gender": "Female",
+    "location": "Arnhem"
+
+  },{//Travel
+    "id": 10,
+    "name": "Jalama Deen",
+    "age": "31years",
+    "url": "travelprofile1.jpg",
+    "travel": "traveller",
+    "gender": "Female",
+    "location": "Rotterdam"
+
+  },{
+    "id": 11,
+    "name": "Justin Tijm",
+    "age": "23years",
+    "url": "travelprofile1.jpg",
+    "travel": "traveller",
+    "gender": "Male",
+    "location": "Groningen"
+
+  },{//Music
+    "id": 12,
+    "name": "David davidson",
+    "age": "34years",
+    "url": "musicprofile1.jpg",
+    "Music": "DJ",
+    "gender": "Male",
+    "location": "Amsterdam"
+  },{
+    "id": 13,
+    "name": "Britney Bright",
+    "age": "22years",
+    "url": "musicprofile2.jpg",
+    "Music": "DJ",
+    "gender": "Female",
+    "location": "Arnhem"
+  },{//books profiles
+    "id": 14,
+    "name": "Laiba Ander",
+    "age": "29years",
+    "url": "profilebook1.jpg",
+    "Book": "Literature teacher",
+    "gender": "Female",
+    "location": "Utrecht"
+  },{
+    "id": 15,
+    "name": "Ben White",
+    "age": "24years",
+    "url": "profilebook2.jpg",
+    "Music": "DJ",
+    "gender": "Male",
+    "location": "Rotterdam"
+  },{//Dance profiles 
+    "id": 16,
+    "name": "Sharron White",
+    "age": "29years",
+    "url": "danceprofile1",
+    "Dance": "Bale dancer ",
+    "gender": "Female",
+    "location": "Amsterdam"
+  },{
+    "id": 16,
+    "name": "Bram ban ",
+    "age": "18years",
+    "url": "danceprofile2.jpg",
+    "Dance": "Street dancer ",
+    "gender": "Male",
+    "location": "Groningen"
+  }
+  
 ]
 
 
@@ -95,20 +198,27 @@ app.use(express.static('public'))
 // app.use ('/images', express.static( __dirname + 'public/imagesn'))
 
 
+
 //set views 
 app.set('views', path.join(__dirname, 'views'))
 app.set("view engine", 'ejs')
 
+//show profiles with database 
+
 //routes 
 app.get('/search', (req, res) => {
-  res.render("searchlist")
-})
+  res.render("searchlist") 
+});
 
-app.get('/profiles', (req,res) => {
+app.get('/profiles', async (req,res) => {
+  console.log(req.query.hobby)
+  const query =  {}
+  const profiles = await db.collection("profiles").find({}).toArray()
+  console.log(profiles)
   res.render("profilelist",{
     profiles
   })
-})
+});
 
 
 

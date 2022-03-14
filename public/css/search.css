@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:"harmatan"sans-serif;
+    font-family:"harmatan", sans-serif;
 }
 
 body {
@@ -25,6 +25,7 @@ h1 {
 
 header {
     display: flex;
+    flex-direction: row;
     position: relative;   
 }
 
@@ -38,8 +39,8 @@ header img{
 }
 
 
-a { 
-    font-size:1.5;
+form button { 
+    font-size:1.5em;
     text-decoration: none;
     color:white;
     background-color: #00308F;

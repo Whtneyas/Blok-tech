@@ -4,8 +4,11 @@
   "description": "Voor matching applicatie",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "deploy": "nodemon server.js",
+    "start" : "node server.js"
   },
+
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Whtneyas/pt-course-20-21.git"
