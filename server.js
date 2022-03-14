@@ -2,191 +2,191 @@
 const dotenv = require("dotenv").config();
 const{MongoClient}= require("mongodb");
 const {ObjectId} = require("mongodb");
+const bodyParser = require('body-parser');
 
-//To test if it works 
-console.log(process.env.TESTVAR)
+
 
 const express = require("express")
 const app = express()
+
 const port = process.env.PORT || 3000;//port maken
 const path = require("path");
 let db = null;
 const profiles = [
   {
+        "id": 1,
+        "name": " John Mayor",
+        "age": "22years",
+        "url": "profile1.jpg",
+        "hobby": "archery",
+        "gender": "Male",
+        "location": "Amsterdam"
+      },{
+        "id": 2,
+        "name": "Derrick Benson",
+        "age": "32years",
+        "url": "profile2-golf.jpg",
+        "hobby": "Golf",
+        "gender": "Male",
+        "location": "Rotterdam"
+      },{
+        "id": 3,
+        "name": "Gideon Davidson",
+        "age": "34years",
+        "url": "artprofile1.jpg",
+        "hobby": "painting",
+        "gender": "Male",
+        "location": "Utrecht"
+      },{
+        "id": 4,
+        "name": " Nina Brent",
+        "age": "27",
+        "url": "artprofile2.jpg",
+        "hobby": "painting",
+        "gender": "Female",
+        "location": "Arnhem"
+      },{
+        "id": 5,
+        "name": "Bridjet Peterson",
+        "age": "23years",
+        "url": "foodprofile1.jpg",
+        "hobby": "Chef",
+        "gender": "Female",
+        "location": "Groningen"
+      },{
+        "id": 6,
+        "name": "James Brown ",
+        "age": "20years",
+        "url": "foodprofile2.jpg",
+        "hobby ": "Food lover",
+        "gender": "Male",
+        "location": "Amsterdam"
+      },{
+        "id": 17,
+        "name": "Bridjet Peterson",
+        "age": "23years",
+        "url": "gameprofile2.jpg",
+        "hobby": "Chef",
+        "gender": "Female",
+        "location": "Groningen"
+      },{
+        "id": 18,
+        "name": "James Brown ",
+        "age": "20years",
+        "url": "gameprofile1.jpg",
+        "hobby ": "Food lover",
+        "gender": "Male",
+        "location": "Amsterdam"
+      },
+      
+      
+      {
+        "id": 7,
+        "name": "Keisha Alexander ",
+        "age": "25years",
+        "url": "fashionprofile1.jpg",
+        "hobby": "Model",
+        "gender": "Female",
+        "location": "Rotterdam"
+    
+      },{
+        "id": 8,
+        "name": "Mandy Abrah ",
+        "age": "22years",
+        "url": "fashionprofile2.jpg",
+        "hobby": "Shopperholic",
+        "gender": "Female",
+        "location": "Arnhem"
+    
+      },{
+        "id": 9,
+        "name": "Justine peet",
+        "age": "26years",
+        "url": "beautyprofile1.jpg",
+        "beauty": "Love beauty",
+        "gender": "Female",
+        "location": "Utrecht"
+    
+      },{
+        "id": 9,
+        "name": "Justine peet",
+        "age": "30years",
+        "url": "beautyprofile2.jpg",
+        "hobby": "Love beauty",
+        "gender": "Female",
+        "location": "Arnhem"
+    
+      },{
+        "id": 10,
+        "name": "Jalama Deen",
+        "age": "31years",
+        "url": "travelprofile1.jpg",
+        "travel": "traveller",
+        "gender": "Female",
+        "location": "Rotterdam"
+    
+      },{
+        "id": 11,
+        "name": "Justin Tijm",
+        "age": "23years",
+        "url": "travelprofile2.jpg",
+        "hobby": "traveller",
+        "gender": "Male",
+        "location": "Groningen"
+    
+      },{
+        "id": 12,
+        "name": "David davidson",
+        "age": "34years",
+        "url": "musicprofile2.jpg",
+        "hobby": "music",
+        "gender": "Male",
+        "location": "Amsterdam"
+      },{
+        "id": 13,
+        "name": "Britney Bright",
+        "age": "22years",
+        "url": "musicprofile2.jpg",
+        "hobby": "DJ",
+        "gender": "Female",
+        "location": "Arnhem"
+      },{
+        "id": 14,
+        "name": "Laiba Ander",
+        "age": "29years",
+        "url": "profilebook1.jpg",
+        "hobby": "Literature teacher",
+        "gender": "Female",
+        "location": "Utrecht"
+      },{
+        "id": 15,
+        "name": "Ben White",
+        "age": "24years",
+        "url": "profilebook2.jpg",
+        "hobby": "DJ",
+        "gender": "Male",
+        "location": "Rotterdam"
+      },{
+        "id": 16,
+        "name": "Sharron White",
+        "age": "29years",
+        "url": "danceprofile1",
+        "hobby": "Bale dancer ",
+        "gender": "Female",
+        "location": "Amsterdam"
+      },{
+        "id": 16,
+        "name": "Bram ban ",
+        "age": "18years",
+        "url": "danceprofile2.jpg",
+        "hobby": "Street dancer ",
+        "gender": "Male",
+        "location": "Groningen"
+      }
+      
+    ]
+    
 
-//Sports profiles 
-    "id": 1,
-    "name": " John Mayor",
-    "age": "22years",
-    "url": "profile1.jpg",
-    "sports": "archery",
-    "gender": "Male",
-    "location": "'Amsterdam"
-
-  },{
-    "id": 2,
-    "name": "Derrick Benson",
-    "age": "32years",
-    "url": "profile2-golf.jpg",
-    "sports": "Golf",
-    "gender": "Male",
-    "location": "Rotterdam"
-  },{//art profiles
-    "id": 3,
-    "name": "Gideon Davidson",
-    "age": "34years",
-    "url": "artprofile1.jpg",
-    "art": "painting",
-    "gender": "Male",
-    "location": "Utrecht"
-  },{
-    "id": 4,
-    "name": " Nina Brent",
-    "age": "27",
-    "url": "artprofile2.jpg",
-    "art": "painting",
-    "gender": "Female",
-    "location": "Arnhem"
-  },{//food profiles
-    "id": 5,
-    "name": "Bridjet Peterson",
-    "age": "23years",
-    "url": "foodprofile1.jpg",
-    "food": "Chef",
-    "gender": "Female",
-    "location": "Groningen"
-  },{
-    "id": 6,
-    "name": "James Brown ",
-    "age": "20years",
-    "url": "foodprofile2.jpg",
-    "food ": "Food lover",
-    "gender": "Male",
-    "location": "Amsterdam"
-  },{//Games profiles
-    "id": 17,
-    "name": "Bridjet Peterson",
-    "age": "23years",
-    "url": "gameprofile2.jpg",
-    "food": "Chef",
-    "gender": "Female",
-    "location": "Groningen"
-  },{
-    "id": 18,
-    "name": "James Brown ",
-    "age": "20years",
-    "url": "gameprofile1.jpg",
-    "food ": "Food lover",
-    "gender": "Male",
-    "location": "Amsterdam"
-  },
-  
-  
-  {//fashion
-    "id": 7,
-    "name": "Keisha Alexander ",
-    "age": "25years",
-    "url": "fashionprofile1.jpg",
-    "fashion": "Model",
-    "gender": "Female",
-    "location": "Rotterdam"
-
-  },{
-    "id": 8,
-    "name": "Mandy Abrah ",
-    "age": "22years",
-    "url": "fashionprofile2.jpg",
-    "fashion": "Shopperholic",
-    "gender": "Female",
-    "location": "Arnhem"
-
-  },{//Beauty
-    "id": 9,
-    "name": "Justine peet",
-    "age": "26years",
-    "url": "beautyprofile1.jpg",
-    "beauty": "Love beauty",
-    "gender": "Female",
-    "location": "Utrecht"
-
-  },{
-    "id": 9,
-    "name": "Justine peet",
-    "age": "30years",
-    "url": "beautyprofile2.jpg",
-    "beauty": "Love beauty",
-    "gender": "Female",
-    "location": "Arnhem"
-
-  },{//Travel
-    "id": 10,
-    "name": "Jalama Deen",
-    "age": "31years",
-    "url": "travelprofile1.jpg",
-    "travel": "traveller",
-    "gender": "Female",
-    "location": "Rotterdam"
-
-  },{
-    "id": 11,
-    "name": "Justin Tijm",
-    "age": "23years",
-    "url": "travelprofile1.jpg",
-    "travel": "traveller",
-    "gender": "Male",
-    "location": "Groningen"
-
-  },{//Music
-    "id": 12,
-    "name": "David davidson",
-    "age": "34years",
-    "url": "musicprofile1.jpg",
-    "Music": "DJ",
-    "gender": "Male",
-    "location": "Amsterdam"
-  },{
-    "id": 13,
-    "name": "Britney Bright",
-    "age": "22years",
-    "url": "musicprofile2.jpg",
-    "Music": "DJ",
-    "gender": "Female",
-    "location": "Arnhem"
-  },{//books profiles
-    "id": 14,
-    "name": "Laiba Ander",
-    "age": "29years",
-    "url": "profilebook1.jpg",
-    "Book": "Literature teacher",
-    "gender": "Female",
-    "location": "Utrecht"
-  },{
-    "id": 15,
-    "name": "Ben White",
-    "age": "24years",
-    "url": "profilebook2.jpg",
-    "Music": "DJ",
-    "gender": "Male",
-    "location": "Rotterdam"
-  },{//Dance profiles 
-    "id": 16,
-    "name": "Sharron White",
-    "age": "29years",
-    "url": "danceprofile1",
-    "Dance": "Bale dancer ",
-    "gender": "Female",
-    "location": "Amsterdam"
-  },{
-    "id": 16,
-    "name": "Bram ban ",
-    "age": "18years",
-    "url": "danceprofile2.jpg",
-    "Dance": "Street dancer ",
-    "gender": "Male",
-    "location": "Groningen"
-  }
-  
-]
 
 
 
@@ -197,7 +197,8 @@ app.use(express.static('public'))
 // app.use ('/js', express.static( __dirname + 'public/js'))
 // app.use ('/images', express.static( __dirname + 'public/imagesn'))
 
-
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 //set views 
 app.set('views', path.join(__dirname, 'views'))
@@ -212,15 +213,29 @@ app.get('/search', (req, res) => {
 
 app.get('/profiles', async (req,res) => {
   console.log(req.query.hobby)
-  const query =  {}
-  const profiles = await db.collection("profiles").find({}).toArray()
+  const profiles = await db.collection("profiles").find({}).toArray();
   console.log(profiles)
   res.render("profilelist",{
     profiles
   })
 });
 
+app.post('/profiles', async (req, res) => {
+ console.log(req.body.hobby)
+  const query = { "hobby" : req.body.hobby}
+  const filteredProfiles = await db.collection("profiles").find(query).toArray();
 
+
+  // const filteredProfiles = profiles.filter(item => {
+  //  item.hobby == req.body.hobby;
+  // })
+
+  console.log(filteredProfiles)
+
+  res.render("profilelist",{
+   profiles: filteredProfiles
+ })
+})
 
 app.get('/', (req, res) => {
   res.render('index')

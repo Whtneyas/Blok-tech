@@ -40,18 +40,24 @@ header img{
 
 
 form button { 
-    font-size:1.5em;
+    position: relative;
+    left: 2em;
+    font-size:.8em;
     text-decoration: none;
     color:white;
     background-color: #00308F;
     border: none;
-    padding: 1em;
-    left:25em;
+    padding: .7em;
     border-radius: 7px;
     z-index: 1;
-    
-  
-  }
+ 
+ }
+
+ form button:hover {
+   background-color: rgb(207, 207, 38); 
+   cursor: pointer;
+   color:black
+ }
 
 h2{
     margin-top: 1em;
@@ -93,5 +99,32 @@ input.checkbox-layout{
 label {
     position: relative;
     bottom:1.5em;
+
+}
+
+@media only screen and (min-width: 600px) {
+   header img{
+          width: 70px;
+      }
+      /* Choose interest*/
+   h2 {
+       margin-top: 0;
+
+   }
+
+
+    form {
+        left:10em;
+        font-size: 1.7rem;
+    }
+
+    form input {
+        right:28em;
+    }
+
+    form label{
+        right: -4em;
+
+    }
 
 }

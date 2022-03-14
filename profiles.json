@@ -4,7 +4,7 @@
     "name": " John Mayor",
     "age": "22years",
     "url": "profile1.jpg",
-    "sports": "archery",
+    "hobby": "archery",
     "gender": "Male",
     "location": "Amsterdam"
   },{
@@ -12,7 +12,7 @@
     "name": "Derrick Benson",
     "age": "32years",
     "url": "profile2-golf.jpg",
-    "sports": "Golf",
+    "hobby": "Golf",
     "gender": "Male",
     "location": "Rotterdam"
   },{
@@ -20,7 +20,7 @@
     "name": "Gideon Davidson",
     "age": "34years",
     "url": "artprofile1.jpg",
-    "art": "painting",
+    "hobby": "painting",
     "gender": "Male",
     "location": "Utrecht"
   },{
@@ -28,7 +28,7 @@
     "name": " Nina Brent",
     "age": "27",
     "url": "artprofile2.jpg",
-    "art": "painting",
+    "hobby": "painting",
     "gender": "Female",
     "location": "Arnhem"
   },{
@@ -36,7 +36,7 @@
     "name": "Bridjet Peterson",
     "age": "23years",
     "url": "foodprofile1.jpg",
-    "food": "Chef",
+    "hobby": "Chef",
     "gender": "Female",
     "location": "Groningen"
   },{
@@ -44,7 +44,7 @@
     "name": "James Brown ",
     "age": "20years",
     "url": "foodprofile2.jpg",
-    "food ": "Food lover",
+    "hobby ": "Food lover",
     "gender": "Male",
     "location": "Amsterdam"
   },{
@@ -52,7 +52,7 @@
     "name": "Bridjet Peterson",
     "age": "23years",
     "url": "gameprofile2.jpg",
-    "food": "Chef",
+    "hobby": "Chef",
     "gender": "Female",
     "location": "Groningen"
   },{
@@ -60,7 +60,7 @@
     "name": "James Brown ",
     "age": "20years",
     "url": "gameprofile1.jpg",
-    "food ": "Food lover",
+    "hobby ": "Food lover",
     "gender": "Male",
     "location": "Amsterdam"
   },
@@ -71,7 +71,7 @@
     "name": "Keisha Alexander ",
     "age": "25years",
     "url": "fashionprofile1.jpg",
-    "fashion": "Model",
+    "hobby": "Model",
     "gender": "Female",
     "location": "Rotterdam"
 
@@ -80,7 +80,7 @@
     "name": "Mandy Abrah ",
     "age": "22years",
     "url": "fashionprofile2.jpg",
-    "fashion": "Shopperholic",
+    "hobby": "Shopperholic",
     "gender": "Female",
     "location": "Arnhem"
 
@@ -98,7 +98,7 @@
     "name": "Justine peet",
     "age": "30years",
     "url": "beautyprofile2.jpg",
-    "beauty": "Love beauty",
+    "hobby": "Love beauty",
     "gender": "Female",
     "location": "Arnhem"
 
@@ -115,8 +115,8 @@
     "id": 11,
     "name": "Justin Tijm",
     "age": "23years",
-    "url": "travelprofile1.jpg",
-    "travel": "traveller",
+    "url": "travelprofile2.jpg",
+    "hobby": "traveller",
     "gender": "Male",
     "location": "Groningen"
 
@@ -124,8 +124,8 @@
     "id": 12,
     "name": "David davidson",
     "age": "34years",
-    "url": "musicprofile1.jpg",
-    "Music": "DJ",
+    "url": "musicprofile2.jpg",
+    "hobby": "DJ",
     "gender": "Male",
     "location": "Amsterdam"
   },{
@@ -133,7 +133,7 @@
     "name": "Britney Bright",
     "age": "22years",
     "url": "musicprofile2.jpg",
-    "Music": "DJ",
+    "hobby": "DJ",
     "gender": "Female",
     "location": "Arnhem"
   },{
@@ -141,7 +141,7 @@
     "name": "Laiba Ander",
     "age": "29years",
     "url": "profilebook1.jpg",
-    "Book": "Literature teacher",
+    "hobby": "Literature teacher",
     "gender": "Female",
     "location": "Utrecht"
   },{
@@ -149,7 +149,7 @@
     "name": "Ben White",
     "age": "24years",
     "url": "profilebook2.jpg",
-    "Music": "DJ",
+    "hobby": "DJ",
     "gender": "Male",
     "location": "Rotterdam"
   },{
@@ -157,7 +157,7 @@
     "name": "Sharron White",
     "age": "29years",
     "url": "danceprofile1",
-    "Dance": "Bale dancer ",
+    "hobby": "Bale dancer ",
     "gender": "Female",
     "location": "Amsterdam"
   },{
@@ -165,7 +165,7 @@
     "name": "Bram ban ",
     "age": "18years",
     "url": "danceprofile2.jpg",
-    "Dance": "Street dancer ",
+    "hobby": "Street dancer ",
     "gender": "Male",
     "location": "Groningen"
   }

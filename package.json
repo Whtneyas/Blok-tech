@@ -5,10 +5,8 @@
   "main": "index.js",
   "scripts": {
     "deploy": "nodemon server.js",
-    "start" : "node server.js"
+    "start": "nodemon server.js"
   },
-
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Whtneyas/pt-course-20-21.git"
@@ -20,13 +18,15 @@
   },
   "homepage": "https://github.com/Whtneyas/pt-course-20-21#readme",
   "dependencies": {
+    "body-parse": "^0.1.0",
     "camelcase": "^6.3.0",
     "dotenv": "^16.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.2",
     "lodash": "^4.17.21",
     "mongodb": "^4.4.1",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "parser": "^0.1.4"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
