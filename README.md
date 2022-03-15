@@ -3,7 +3,7 @@
 # Matching app - Hubby Buddy 
 Hubby buddy is een matching applicatie die mensen met hetzelfde interesses of hobbies matchen aan de hand van de gekozen hobbie van de gebruiker. De gebruiker kan dus met de matches chatten, volgen en ook liken. 
 
-##Feature 
+## Feature 
 Voor mijn feature ga ik de filter functie uitwerken. Op basis van de gekozen interesse , krijg de gebruiker een lijst van profielen met hetzelfde hobbies 
 
 ## Packages geinstallerd
