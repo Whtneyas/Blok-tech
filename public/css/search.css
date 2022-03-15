@@ -114,8 +114,9 @@ label {
 
 
     form {
-        left:10em;
-        font-size: 1.7rem;
+        top:5em;
+        left:20em;
+        font-size: 1.5rem;
     }
 
     form input {
@@ -126,5 +127,13 @@ label {
         right: -4em;
 
     }
+    form button {
+        bottom: 35em;
+        margin:auto;
+        left: 15em;
+
+    }
+
+    
 
 }

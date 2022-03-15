@@ -73,7 +73,7 @@ ul li {
 
 }
 
-ul{
+.header2 ul{
     position: relative;
     overflow: scroll;
     display: flex;
@@ -81,9 +81,10 @@ ul{
     flex-direction: row;
     top:0;
     padding: 1em;
+    justify-items: center;
 
 }
-  ul img{
+ .header2 ul img{
   width: 50px;
   height: 50px;
   display: block;
@@ -140,16 +141,16 @@ details p:hover{
 background-color: yellow;
 }
 
-
-.footer-navbar {
-    display: flex;
-    background-color: yellow;
-
+footer ul  {
+     display:flex;
+     flex-direction: row;
+     background-color: yellow;
 }
 
-.footer-navbar ul img{
+footer ul img{
   width: 50px;
   height: 50px;
+  border-radius: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -158,5 +159,13 @@ background-color: yellow;
 
  
 
+}
+
+@media only screen and (min-width: 600px) {
+    ul {
+        right: -15em;
+    }
+    
+    
 }
 

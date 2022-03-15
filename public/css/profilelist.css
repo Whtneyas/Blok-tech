@@ -36,13 +36,6 @@ main img {
 }
 
 
-
-
-.resize-image {
-    margin: em;
-    height: 400px;
-}
-
 main article {
     display: flex;
     position: relative;
@@ -66,5 +59,41 @@ main article p {
     
 
 }
+/**
+
+@media only screen and (min-width: 600px)
+{
+
+    details summary p {
+        margin-left: 10em;
+    }
+    main img {
+        width : 50%;
+
+    }
+
+}
+ h2 {
+     margin-left : 7em;
+     font-size: 3em;
+     margin-bottom: 4em;
+ }
+
+main article {
+    left : 25em;
+    bottom: 5em;
+
+}
+
+main article p {
+     font-size : 1.5rem;
+     padding: .6em;
+}
+
+
+footer ul {
+    display: none;
+}
+
 
 
