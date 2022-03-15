@@ -53,12 +53,8 @@ Voor dit project maak ik gebruik van MIT licence .Feel free to peek!!
  
 
 ## Resources 
-  De meeste bronnen ik van de les gekregen.
-  
-   Bronnen: 
-    Stack Overflow - Where Developers Learn, Share, & Build Careers. (n.d.).
-    
-  Stack Overflow. https://stackoverflow.com/
+
+  Stack Overflow - Where Developers Learn, Share, & Build Careers. (n.d.).Stack Overflow. https://stackoverflow.com/
   
   GitHub: Where the world builds software. (n.d.). GitHub. https://github.com/
 
