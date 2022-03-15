@@ -54,24 +54,26 @@ Voor dit project maak ik gebruik van MIT licence .Feel free to peek!!
 
 ## Resources 
   De meeste bronnen ik van de les gekregen.
-  Bronnen :
-  -[ Stackoverflow ](https://stackoverflow.com/)
   
-  - [ Github  ](https://github.com/) 
+   Bronnen: 
+    Stack Overflow - Where Developers Learn, Share, & Build Careers. (n.d.).
+    
+  Stack Overflow. https://stackoverflow.com/
   
-  - [ Express ](https://express.com/)
-  
-  - [ Introduction to Nodejs ](https://Nodejs.com/) 
+  GitHub: Where the world builds software. (n.d.). GitHub. https://github.com/
+
+  A Designer’s Guide to the Terminal. (n.d.). React for Design. Retrieved March 15, 2022, from https://react.design/terminal
 
 
-  https://react.design/terminal - commandlines 
-  
-  https://expressjs.com/en/guide/using-template-engines.html -express tempalte engines 
-  https://expressjs.com/en/resources/template-engines.html - different template engines 
+  Template Engines. (n.d.). Template Engines. Retrieved March 15, 2022, from https://expressjs.com/en/resources/template-engines.html
+     
   MDN. (2021, 14 september). Introduction to the DOM - Web APIs : https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+     
   The Power of Progressive Enhancement by Andy Bell :  https://archive.hankchizljaw.com/wrote/the-power-of-progressive-enhancement
+        
   MDN. (2022, 22 januari) Introducing asynchronous JavaScript. : https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing
-  
+       
+  Express/Node introduction - Learn web development | MDN. (2022a, February 3). Introduction Node Js. https://developer.mozilla.org/en-US/docs/Learn/Server-                       side/Express_Nodejs/Introduction#introducing_express
   
   
  
