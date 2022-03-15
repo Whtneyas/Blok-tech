@@ -31,28 +31,28 @@ moet je de volgende regel code in je terminal runnen.
 
 `$ git clone https://github.com/Whtneyas/blok-tech.git .`
 
-Database 
+## Database 
 De database waar ik gebruik van maak is de [MongoDB](https://www.bing.com/search?q=mongodb+website&cvid=a476e8de36b84ec09f21baa8e1cbd5c1&aqs=edge.1.69i57j0.8149j0j1&pglt=299&FORM=ANNTA1&PC=HCTS)
 
-# Hoe kun je mijn package runnen. 
+## Hoe kun je mijn package runnen. 
   Om mijn applicatie te kunnen runnen moet je localhost:3000 in de browser zoeken.
 
-# License
+## License
 Voor dit project maak ik gebruik van MIT licence .Feel free to peek!!
 
-# Contact 
+## Contact 
   - Naam : Whitney Abrah 
   - Email : Whitneyserwaa@gmail.com 
 
 
-# Credits
+## Credits
  Ik wil deze docent bedanken voor hun grote inzet tijdens deze project .
  - Robert Spiers  : Het  vak project tech gegeven
  - Sonya Rouwhorst : Het vak les Backend development gegeven 
  - Danny de vries   : Het vak Frontend Development gegeven 
  
 
-# Resources 
+## Resources 
   De meeste bronnen ik van de les gekregen.
   Bronnen :
   -[ Stackoverflow ](https://stackoverflow.com/)
