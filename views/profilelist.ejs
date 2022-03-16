@@ -1,30 +1,35 @@
 <head>
+    <!--Includes the head-->
     <%- include('include/head.ejs')%>
 
 </head>
 
 
 <body>
+<!--Includes the header-->
     <%- include('include/header.ejs')%>
 
     <main>
+        <!--Profiles -->
         <% profiles.forEach(function(profile){%>
         <h2><%= profile.name %></h2>
-
         <img src="/images/<%=profile.url %>" alt="">
         <article>
             <p><%=profile.age %></p>
             <p><%=profile.hobby%></p>
             <p><%=profile.gender %></p>
             <p><%=profile.location %></p>
+            <!--Formulier gemaakt voor de volg functie maar die heb ik nog niet af -->
+            <form action="/follow" method="POST">
+                <input type="hidden" value="<%= profile.id %>" name="follow" />
+                <button type="submit">Follow</button>
+            </form>
         </article>
-
 
         <% }) %>
 
-
-
     </main>
+    <!--Includes the footer -->
     <%- include('include/footer.ejs')%>
 
 

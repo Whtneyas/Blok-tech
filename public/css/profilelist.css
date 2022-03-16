@@ -2,40 +2,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "harmattan",  sans-serif;
+    font-family: "harmattan", sans-serif;
 }
 
 body {
     background-color: beige;
     overflow: scroll;
-
 }
 
-/*images profielen*/
+/*In de main zitten alle profielen**/
+main {
+    position: relative;
+    bottom: 4.5em;
+    margin-bottom: 0;
+}
+
+/*Namen van profiels **/
 h2 {
     position: relative;
     color: White;
     top: 10em;
     left: .6em;
     font-size: 2rem;
-
 }
-
-main {
-    position: relative;
-    bottom: 4.5em;
-}
-
+/**Image van Profielen**/
 main img {
     width: 100%;
     height: 400px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-   
+
 }
-
-
+/**Bescrivinggen qua leeftijjd, hobby en gender**/
 main article {
     display: flex;
     position: relative;
@@ -43,9 +42,6 @@ main article {
     gap: 1em;
     bottom: 4em;
     left: 1em;
-
-
-
 }
 
 main article p {
@@ -53,47 +49,34 @@ main article p {
     background-color: #F4ECC2;
     padding: .5em;
     border-radius: 6px;
-    box-shadow: 2px 3px 4px ;
-   
-    
-    
-
+    box-shadow: 2px 3px 4px;
 }
-/**
+main article p:hover{
+    transform: scale(1.3);
+}
 
-@media only screen and (min-width: 600px)
-{
+/*****************
+@media only screen and (min-width: 600px) {
 
-    details summary p {
-        margin-left: 10em;
-    }
-    main img {
-        width : 50%;
-
+    main {
+        position: relative;  
     }
 
+   main img {
+       width: 50%;
+   }
+
+   h2{
+       left: 12em;
+       font-size: 2em;
+
+   }
+
+   p {
+       position: relative;
+       right: -26em;
+       padding: 2em;
+      
+   }
 }
- h2 {
-     margin-left : 7em;
-     font-size: 3em;
-     margin-bottom: 4em;
- }
-
-main article {
-    left : 25em;
-    bottom: 5em;
-
-}
-
-main article p {
-     font-size : 1.5rem;
-     padding: .6em;
-}
-
-
-footer ul {
-    display: none;
-}
-
-
-
+/**********************
