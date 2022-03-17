@@ -223,7 +223,7 @@ app.post('/follow', async (req, res) => {
   }
   await db.collection("followers").insertOne(test);
 
-  res.render("nieuwe-pagina", )
+  res.render("followers",)
 
 });
 
@@ -245,7 +245,7 @@ app.post('/profiles', async (req, res) => {
     "hobby": req.body.hobby
   }
   const filteredProfiles = await db.collection("profiles").find(query).toArray();
-  //console.log(filteredProfiles)
+   console.log(filteredProfiles)
 
   res.render("profilelist", {
     profiles: filteredProfiles
