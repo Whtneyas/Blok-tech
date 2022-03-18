@@ -13,22 +13,13 @@
 <body>
  
         <main>
-            <!--Profiles -->
-            <% profiles.forEach(function(profile){%>
-            <h2><%= profile.name %></h2>
-            <img src="/images/<%=profile.url %>" alt="">
-            <article>
-                <p><%=profile.age %></p>
-                <p><%=profile.hobby%></p>
-                <p><%=profile.gender %></p>
-                <p><%=profile.location %></p>
-            </article>
-    
+            Followers
+            <% followers.forEach(function(follower){%>
+            <h2><%= follower.name %></h2>
             <% }) %>
     
         </main>
         <!--Includes the footer -->
         <%- include('include/footer.ejs')%>
-    
-         <script src="./js/script.js"></script>
+        
     </body>

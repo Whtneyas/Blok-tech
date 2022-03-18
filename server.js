@@ -14,6 +14,7 @@ const app = express();
 const port = process.env.PORT || 3000; //port maken
 const path = require("path");
 let db = null;
+
 const profiles = [{
     "id": 1,
     "name": " John Mayor",
@@ -183,9 +184,7 @@ const profiles = [{
     "hobby": "Street dancer ",
     "gender": "Male",
     "location": "Groningen"
-  }
-
-]
+  }]
 
 //Middleware and Static files
 app.use(express.static('public'))
@@ -210,21 +209,23 @@ app.get('/search', (req, res) => {
 //Route for the the following page (Niet afgemaakt )
 app.get('/followers', async (req, res) => {
   const followers = await db.collection("followers").find({}).toArray();
+  console.log(followers)
 
-  res.render("followers", followers)
+  res.render("followers", {followers: followers})
 });
 
 
 app.post('/follow', async (req, res) => {
   console.log("test", req.body)
 
-  let test = {
-    user: req.body.follow
+  let data = {
+    user: req.body.follow,
+    name: req.body.name
   }
-  await db.collection("followers").insertOne(test);
+  await db.collection("followers").insertOne(data);
+  const followers = await db.collection("followers").find({}).toArray();
 
-  res.render("followers",)
-
+  res.render("followers", {followers: followers})
 });
 
 //route for the profile pages 
@@ -240,7 +241,7 @@ app.get('/profiles', async (req, res) => {
 });
 
 app.post('/profiles', async (req, res) => {
-  console.log(req.body.hobby)
+   console.log(req.body.hobby)
   const query = {
     "hobby": req.body.hobby
   }
@@ -251,6 +252,28 @@ app.post('/profiles', async (req, res) => {
     profiles: filteredProfiles
   })
 })
+//Filter op locaties
+ //route for location
+ app.get('/locations', async (req, res) => {
+  const locations = await db.collection("locations").find({}).toArray();
+  console.log(req.body.location)
+  res.render('locations')
+})
+
+app.post('/locations', async (req, res) => {
+  console.log(req.body.location)
+ const query = {
+   "location": req.body.location
+ }
+ const filteredLocations = await db.collection("locations").find(query).toArray();
+  console.log(filteredLocations)
+
+ res.render("locations", {
+   locations: filteredLocations
+ })
+})
+
+
 //route for the inlogpagina.
 app.get('/', (req, res) => {
   res.render('index')

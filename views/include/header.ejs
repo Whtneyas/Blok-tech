@@ -1,95 +1,74 @@
-<header>
-    <div class="header1">
-        <h1>Hobby buddy</h1>
-        <img src="images/logo.png" alt="" class="logo">
+<body>
 
-        <img src="images/chaticon.png" alt="" class="chaticon">
-        <img src="images/notification.png" alt=" class" class="notification-icon">
+    <header>
+        <div class="header1">
+            <h1>Hobby buddy</h1>
+            <img src="images/logo.png" alt="" class="logo">
 
-    </div>
+            <img src="images/chaticon.png" alt="" class="chaticon">
+            <img src="images/notification.png" alt=" class" class="notification-icon">
 
-    <div class="header2">
-        
-    
-        <!--Stories-->
-        <ul>
-            <li>
-                <img src="images/profile1.jpg" alt="">
-                <p>Charlotte</p>
-            </li>
+        </div>
 
-            <li>
-                <img src="images/profile2-golf.jpg" alt="">
-                <p>Mandy</p>
-            </li>
-
-            <li>
-
-                <img src="images/profile5-football.jpg" alt="">
-                <p>Stephany</p>
-            </li>
-
-            <li>
-                <img src="images/profile7-swimmer.jpg" alt="">
-                <p>John</p>
-            </li>
-
-            <li>
-                <img src="images/profile5-football.jpg" alt="">
-                <p>Travis</p>
-            </li>
+        <div class="header2">
 
 
-            <li>
-                <img src="images/profile3-fitness.jpg" alt="">
-                <p>Daniel</p>
-            </li>
+            <!--Stories-->
+            <ul>
+                <li>
+                    <div class="story1">
+                    <img src="images/profile1.jpg" alt="">
+                    <p>Charlotte  </p>
+                   </div>
+                </li>
 
-            <li>
-                <img src="images/profile1.jpg" alt="">
-                <p>Charlotte</p>
-            </li>
+                <li>
+                    <div class="story2">
+                    <img src="images/profile2-golf.jpg" alt="">
+                    <p>Mandy</p>
+                    </div>
+                </li>
 
-            <li>
-                <img src="images/profile5-football.jpg" alt="">
-                <p>Mandy</p>
-            </li>
+                <li>
+                    <img src="images/profile5-football.jpg" alt="" class="story3">
+                    <p>Stephany</p>
+                </li>
 
-            <li>
+                <li >
+                    <img src="images/profile7-swimmer.jpg" alt="" class="story4">
+                    <p>John</p>
+                </li>
 
-                <img src="images/profile3-fitness.jpg" alt="">
+                <li">
+                    <img src="images/profile5-football.jpg" alt="" class="story5">
+                    <p>Travis</p>
+                </li>
 
-                <p>Stephany</p>
-            </li>
+            </ul>
 
-            <li>
-                <img src="images/profile5-football.jpg" alt="">
-                <p>Charlotte</p>
-            </li>
+            <form action="/locations" method="POST">
+                <label for=" ">Amsterdam</label>
+                <input type="radio" name="location" value="Amsterdam">
 
-            <li>
-                <img src="images/profile7-swimmer.jpg" alt="">
-                <p>Mandy</p>
-            </li>
+                <label for=""> Rotterdam </label>
+                <input type="radio" name="location" value="Rotterdam">
 
-            <li>
+                <label for="">Arnhem</label>
+                <input type="radio" name="location" value="Arnhem">
 
-                <img src="images/basketball.jpg" alt="">
+                <label for="">Groningen</label>
+                <input type="radio" name="location" value="Groningen">
 
-                <p>Stephany</p>
-            </li>
+                <label for="">Utrecht</label>
+                <input type="radio" name="location" value="Utrecht">
 
-        </ul>
-        <!--Filter -->
-        <details>
-            <summary>Filter</summary>
-            <p>Amsterdam</p>
-            <p>Rotterdam</p>
-            <p>Arnhem</p>
-            <p>Groningen</p>
-            
-        </details>
+                <button>filter</button>
 
-    </div>
+            </form>
 
-</header>
+
+        </div>
+
+    </header>
+ <script src="/public/js/script.js"></script>
+</body>

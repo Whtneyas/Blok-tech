@@ -6,25 +6,29 @@
 
 
 <body>
-<!--Includes the header-->
+    <!--Includes the header-->
     <%- include('include/header.ejs')%>
 
     <main>
         <!--Profiles -->
         <% profiles.forEach(function(profile){%>
-        <h2><%= profile.name %></h2>
-        <img src="/images/<%=profile.url %>" alt="">
-        <article>
-            <p><%=profile.age %></p>
-            <p><%=profile.hobby%></p>
-            <p><%=profile.gender %></p>
-            <p><%=profile.location %></p>
-            <!--Formulier gemaakt voor de volg functie maar die heb ik nog niet af -->
-            <form action="/follow" method="POST">
-                <input type="hidden" value="<%= profile.id %>" name="follow" />
-                <button type="submit">Follow</button>
-            </form>
-        </article>
+        <section class="main-profile">
+            <h2><%= profile.name %></h2>
+            <img src="/images/<%=profile.url %>" alt="">
+
+            <article>
+                <p><%=profile.age %></p>
+                <p><%=profile.hobby%></p>
+                <p><%=profile.gender %></p>
+                <p><%=profile.location %></p>
+                <!--Formulier gemaakt voor de volg functie maar die heb ik nog niet af -->
+                <form action="/follow" method="POST">
+                    <input type="hidden" value="<%= profile.id %>" name="follow" />
+                    <input type="hidden" value="<%= profile.name %>" name="name" />
+                    <button type="submit">Follow</button>
+                </form>
+            </article>
+        </section>
 
         <% }) %>
 
@@ -32,5 +36,5 @@
     <!--Includes the footer -->
     <%- include('include/footer.ejs')%>
 
-     <script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
