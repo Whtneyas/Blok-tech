@@ -7,10 +7,9 @@
 
 body {
     background-color: beige;
-
-
 }
 
+/**text voor logo**/
 h1 {
 
     margin-top: 3.5em;
@@ -18,9 +17,6 @@ h1 {
     text-align: center;
     color: black;
     font-size: 1.2rem;
-
-
-
 }
 
 header {
@@ -38,7 +34,7 @@ header img {
 
 }
 
-
+/**proceed knop**/
 form button {
     position: relative;
     left: 2em;
@@ -50,23 +46,20 @@ form button {
     padding: .7em;
     border-radius: 7px;
     z-index: 1;
-
 }
-
+/**hover**/
 form button:hover {
     background-color: rgb(207, 207, 38);
     cursor: pointer;
     color: black
 }
-
+/**header 2**/
 h2 {
     margin-top: 1em;
     font-size: 2rem;
     text-align: center;
-
 }
-
-
+/**Formulier voor the interesses**/
 form {
     position: relative;
     left: 2em;
@@ -76,7 +69,7 @@ form {
     grid-template-columns: repeat(2, 1fr);
     font-size: 2rem;
 }
-
+/**Opmaak voor de input*/
 input[type="radio"]:checked {
     appearance: none;
     background-color: yellow;
@@ -97,43 +90,4 @@ input {
 label {
     position: relative;
     bottom: 1.5em;
-
-}
-
-@media only screen and (min-width: 600px) {
-    header img {
-        width: 70px;
-    }
-
-    /* Choose interest*/
-    h2 {
-        margin-top: 0;
-
-    }
-
-
-    form {
-        top: 5em;
-        left: 20em;
-        font-size: 1.5rem;
-    }
-
-    form input {
-        right: 28em;
-    }
-
-    form label {
-        right: -4em;
-
-    }
-
-    form button {
-        bottom: 35em;
-        margin: auto;
-        left: 15em;
-
-    }
-
-
-
 }

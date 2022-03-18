@@ -10,11 +10,9 @@ body {
     background-color: yellow;
     position: relative;
     left: 8em;
-
 }
 
 header {
-
     padding: 4em;
 
 }
@@ -22,29 +20,24 @@ header {
 header h1 {
     color: black;
     text-align: center;
-
-
 }
-
+/**De logo**/
 header img {
     width: 30%;
     position: relative;
     top: 3em;
     left: 5.5em;
-
 }
-
-
+/**Heafing 2**/
 header h2 {
     text-align: center;
     margin-top: 3em;
 }
-
+/**Voor het inloggen**/
 header form {
     position: relative;
     left: 1.5em;
 }
-
 header form input {
     display: grid;
     width: 20em;
@@ -67,10 +60,9 @@ p {
     margin-top: 3em;
     display: absolute;
     text-align: center;
-
-
 }
 
+/**Inlogknop**/
 header form button {
     position: relative;
     left: 5em;
@@ -83,9 +75,7 @@ header form button {
     border-radius: 8px;
     border: none;
     box-shadow: 2px 3px solid black;
-
 }
-
 button a {
     color: white;
     text-decoration: none;
@@ -93,35 +83,5 @@ button a {
 
 button:hover {
     color: yellow;
-
-}
-
-/*DESKTOPVERSIE*/
-
-@media all and (min-width: 500px) {
-    body {
-        background-color: white;
-
-    }
-
-    header img {
-        position: relative;
-        width: 20%;
-        left: 12em;
-    }
-
-    .loginbg {
-        position: absolute;
-        background-color: yellow;
-        padding: 1em;
-        margin-left: 20em;
-        margin-right: 20em;
-
-    }
-
-    header form button {
-        left: 6em;
-    }
-
 
 }

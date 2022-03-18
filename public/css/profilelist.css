@@ -27,7 +27,6 @@ h2 {
     font-size: 2rem;
 }
 
-
 /**Image van Profielen**/
 main img {
     width: 100%;
@@ -35,7 +34,6 @@ main img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 /**Bescrivinggen qua leeftijjd, hobby en gender**/
@@ -60,30 +58,27 @@ main article p:hover {
     transform: scale(1.3);
 }
 
+ article form button{
+    position: absolute;
+    background-color: rgb(22, 192, 214) ;
+    padding: .5em;
+    bottom: 5em ;
+    left: 15em;
+    border:none;
+    border-radius: .7em;
+    font-weight: 800;  
+}
 
+article form button:hover{
+    transform: scale(1.3);
+}
+
+article form button:active {
+    background-color: #00308F ;
+}
+
+/**Stylen voor de footer*/
 footer {
     margin-top: -3rem;
 }
 
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-    main img {
-        width: 500px;
-        display: flex;
-        flex-direction: row;
-    }
-    main h2 {
-        left: 12em;
-    }
-
-    main article {
-        
-        left : 23em;
-    }
-
-
-    footer {
-        display: none;
-    }
-}

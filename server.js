@@ -186,6 +186,7 @@ const profiles = [{
     "location": "Groningen"
   }]
 
+
 //Middleware and Static files
 app.use(express.static('public'))
 app.use(bodyParser.json());
@@ -193,10 +194,10 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
+
 //set views en template engines 
 app.set('views', path.join(__dirname, 'views'))
 app.set("view engine", 'ejs')
-
 
 
 //ROUTES
@@ -205,6 +206,7 @@ app.set("view engine", 'ejs')
 app.get('/search', (req, res) => {
   res.render("searchlist")
 });
+
 
 //Route for the the following page (Niet afgemaakt )
 app.get('/followers', async (req, res) => {
@@ -228,6 +230,7 @@ app.post('/follow', async (req, res) => {
   res.render("followers", {followers: followers})
 });
 
+
 //route for the profile pages 
 //gaat de profiles in de database tonen als  de gebruiker de een hobby uit de formulier kies.
 app.get('/profiles', async (req, res) => {
@@ -245,6 +248,7 @@ app.post('/profiles', async (req, res) => {
   const query = {
     "hobby": req.body.hobby
   }
+  
   const filteredProfiles = await db.collection("profiles").find(query).toArray();
    console.log(filteredProfiles)
 

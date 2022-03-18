@@ -1,6 +1,7 @@
 <body>
 
     <header>
+        <!--Bevat de logo, logo text en icoontjes-->
         <div class="header1">
             <h1>Hobby buddy</h1>
             <img src="images/logo.png" alt="" class="logo">
@@ -9,23 +10,22 @@
             <img src="images/notification.png" alt=" class" class="notification-icon">
 
         </div>
-
+        <!--Bevat de stories van profielen-->
         <div class="header2">
-
 
             <!--Stories-->
             <ul>
                 <li>
                     <div class="story1">
-                    <img src="images/profile1.jpg" alt="">
-                    <p>Charlotte  </p>
-                   </div>
+                        <img src="images/profile1.jpg" alt="">
+                        <p>Charlotte </p>
+                    </div>
                 </li>
 
                 <li>
                     <div class="story2">
-                    <img src="images/profile2-golf.jpg" alt="">
-                    <p>Mandy</p>
+                        <img src="images/profile2-golf.jpg" alt="">
+                        <p>Mandy</p>
                     </div>
                 </li>
 
@@ -34,7 +34,7 @@
                     <p>Stephany</p>
                 </li>
 
-                <li >
+                <li>
                     <img src="images/profile7-swimmer.jpg" alt="" class="story4">
                     <p>John</p>
                 </li>
@@ -42,11 +42,12 @@
                 <li">
                     <img src="images/profile5-football.jpg" alt="" class="story5">
                     <p>Travis</p>
-                </li>
+                    </li>
 
             </ul>
-
+            <!--Filter op locatie-->
             <form action="/locations" method="POST">
+
                 <label for=" ">Amsterdam</label>
                 <input type="radio" name="location" value="Amsterdam">
 
@@ -66,9 +67,6 @@
 
             </form>
 
-
-        </div>
-
     </header>
- <script src="/public/js/script.js"></script>
+    <script src="/public/js/script.js"></script>
 </body>

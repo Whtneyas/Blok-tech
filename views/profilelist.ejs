@@ -22,11 +22,11 @@
                 <p><%=profile.gender %></p>
                 <p><%=profile.location %></p>
                 <!--Formulier gemaakt voor de volg functie maar die heb ik nog niet af -->
-                <form action="/follow" method="POST">
-                    <input type="hidden" value="<%= profile.id %>" name="follow" />
-                    <input type="hidden" value="<%= profile.name %>" name="name" />
-                    <button type="submit">Follow</button>
-                </form>
+            <form action="/follow" method="POST">
+                <input type="hidden" value="<%= profile.id %>" name="follow" />
+                <input type="hidden" value="<%= profile.name %>" name="name" />
+                <button type="submit">Follow</button>
+            </form>
             </article>
         </section>
 

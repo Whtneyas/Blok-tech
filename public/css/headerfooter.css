@@ -5,12 +5,10 @@
     box-sizing: border-box;
 }
 
-
 /**header**/
 header {
     display: flex;
     flex-direction: column;
-
 }
 
 /**Voor de body heb ik font gegeven*/
@@ -54,12 +52,10 @@ header img.logo:hover {
     left: 11em;
     width: 35px;
     height: 35px;
-
 }
 
 header img.chaticon:hover {
     transform: scale(1.3);
-
 }
 
 /* Voor de notificatie icon**/
@@ -76,7 +72,6 @@ header img.chaticon:hover {
 header img.notification-icon:hover {
     transform: scale(1.3);
 }
-
 
 /**De stories die onder de header zit*/
 ul li {
@@ -110,9 +105,10 @@ ul li {
     animation-iteration-count: infinite;
     animation-duration: 2s;
 }
-/
+
+
 /**Animatie gemaakt voor de stories om ze te rotaten**/
- @keyframes imagesbounce {
+@keyframes imagesbounce {
     0% {
         transform: rotate(1deg);
     }
@@ -122,31 +118,32 @@ ul li {
 
     }
 }
+
 /** form-filter**/
- header form {
-     display: flex;
-     flex-direction:row;
-      gap: .5em;
-      flex-wrap: wrap;
- }
+header form {
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+    flex-wrap: wrap;
+}
 
- header form input {
-     position: relative;
-     top: .6em;
- }
+header form input {
+    position: relative;
+    top: .6em;
+}
 
- header form button{
-    background-color:yellow;
+header form button {
+    background-color: yellow;
     padding: .3em;
     border-radius: 6px;
     border: none;
     border: 1px solid black;
- }
+}
 
- header form button:hover {
-     transform: scale(1.3);
- }
- 
+header form button:hover {
+    transform: scale(1.3);
+}
+
 /**Footer- Nav bar **/
 footer ul {
     display: flex;
@@ -166,13 +163,4 @@ footer ul img {
 
 footer ul img:hover {
     transform: scale(1.3);
-}
-@media (min-width: 1025px) and (max-width: 1280px) {
- .chaticon ,.notification-icon{
-    display: none; 
- }
- .header2{
-    position: relative;
-    left: 6em;
- }
 }
