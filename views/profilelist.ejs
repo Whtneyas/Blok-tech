@@ -14,13 +14,13 @@
         <% profiles.forEach(function(profile){%>
         <section class="main-profile">
             <h2><%= profile.name %></h2>
-            <img src="/images/<%=profile.url %>" alt="">
-
+            <img src="/images/<%=profile.url %>" alt="">  
             <article>
+                
                 <p><%=profile.age %></p>
                 <p><%=profile.hobby%></p>
                 <p><%=profile.gender %></p>
-                <p><%=profile.location %></p>
+               <p><%=profile.location %></p>
                 <!--Formulier gemaakt voor de volg functie maar die heb ik nog niet af -->
             <form action="/follow" method="POST">
                 <input type="hidden" value="<%= profile.id %>" name="follow" />
@@ -36,5 +36,4 @@
     <!--Includes the footer -->
     <%- include('include/footer.ejs')%>
 
-    <script src="./js/script.js"></script>
 </body>

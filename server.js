@@ -256,10 +256,10 @@ app.post('/profiles', async (req, res) => {
     profiles: filteredProfiles
   })
 })
-//Filter op locaties
+// //Filter op locaties
  //route for location
  app.get('/locations', async (req, res) => {
-  const locations = await db.collection("locations").find({}).toArray();
+  const location = await db.collection("locations").find({}).toArray();
   console.log(req.body.location)
   res.render('locations')
 })

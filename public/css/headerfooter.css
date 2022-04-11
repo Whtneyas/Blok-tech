@@ -106,9 +106,28 @@ ul li {
     animation-duration: 2s;
 }
 
+figure{
+    animation-name: draaien;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+
+}
+.story1 {
+    animation-name: rechtsbewegen ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+.story2 {
+    animation-name: linksbewegen ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
 
 /**Animatie gemaakt voor de stories om ze te rotaten**/
-@keyframes imagesbounce {
+@keyframes draaien {
     0% {
         transform: rotate(1deg);
     }
@@ -116,6 +135,20 @@ ul li {
     100% {
         transform: rotate(360deg);
 
+    }
+}
+
+
+@keyframes rechtsbewegen {
+    100% {
+        transform: translateX(5.5em);
+    }
+}
+
+
+@keyframes linksbewegen {
+    100% {
+        transform: translateX(-5.5em);
     }
 }
 

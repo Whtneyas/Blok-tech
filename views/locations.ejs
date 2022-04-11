@@ -14,8 +14,7 @@
         <% locations.forEach(function(location){%>
         <section class="main-profile">
             <h2><%= location.name %></h2>
-            <img src="/images/<%=location.url %>" alt="">
-
+            <img src="/images/<%=location.url %>" alt="">  
             <article>
                 <p><%=location.age %></p>
                 <p><%=location.hobby%></p>
@@ -31,4 +30,5 @@
     <%- include('include/footer.ejs')%>
 
     <script src="./js/script.js"></script>
+    <script src="./js/filter.js"></script>
 </body>

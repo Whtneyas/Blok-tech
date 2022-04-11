@@ -1,22 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Followers</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/followers.css">
 </head>
- <header>
-   <h1>My followers</h1>  
- </header>
+<body>
+    
+</body>
+</html>
 
 <body>
-        <!--Pagina voor de volgers die heb ik niet afgemaakt-->
-        <main>
-            Followers
+       
+        <header>
+        <h1> Following</h1> 
+        </header>
+        </main>
             <% followers.forEach(function(follower){%>
+            <article>
             <h2><%= follower.name %></h2>
+            <img src="/images/<%=follower.url %>" alt="">     
+            <button>Following</button>
             <% }) %>
+           </article>
         </main>
         <!--Includes the footer -->
         <%- include('include/footer.ejs')%>
